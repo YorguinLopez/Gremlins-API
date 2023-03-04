@@ -1,0 +1,59 @@
+<html>
+    <body>
+        
+        <div style="font-family: Roboto,Helvetica Neue, sans-serif;display: flex !important;justify-content: center !important;">
+            <div style="width: 100% !important;max-width: 730px;padding: 10px;    border: 2px solid #e9e9e9; border-radius: 5px;">
+                <div style="display: flex !important;justify-content: center !important;">
+                    <a>
+                        <img src="https://www.aguasdebarrancabermeja.app/davivienda/pasarelarest/App/microservicios/assets/logo-aguas.png" style="width: 129px;height: 40px;" />
+                    </a>
+                    <img src="https://www.aguasdebarrancabermeja.app/davivienda/pasarelarest/App/microservicios/assets/img_cabecera.png" style="width: calc(100% - 130px);max-width: 600px;height: 60px;">
+                </div>
+                <p style="font-weight: bold; font-size:16px ;">
+                    Hola,
+                </p>
+                <p style="font-weight: bold; font-size:16px ;">
+                    {{pnombre}} {{papellido}}.
+                </p>
+                <p style="font-size: 14px;">
+                    Hemos Generado tu factura de Acueducto y Alcantarillado del Mes de {{mes}}.
+                </p>
+                <div style="display:flex !important ; justify-content:center !important;">
+                    <div class="flex-column" style=" border-right-width:1px ; border-color:#e9e9e9;border-right-style:solid ; height:180px ; width: 50%; text-align:center !important ;">
+                        <div style="height: 70px;">
+                            <h3 style="font-size:16px; margin: 3px 0px;">N° FACTURA</h3>
+                            <h2 style="font-size:18px; margin: 3px 0px; ">{{nfactura}}</h2>
+                        </div>  
+                        <hr style="width: 96%;height:2px;border: none;background-color: #e9e9e9;">
+                        <div style="height: 70px;">
+                            <p style="font-weight: 500 !important;">Conoce el detalle de tu factura</p>
+                            <a href="http://www.aguasdebarrancabermeja.gov.co/consulta_factura/ws/ws_consultafactura.php?user={{usuario}}" style="font-size: 17px;font-weight: bold;text-decoration: none; color: #551a8c; cursor: pointer !important;">DESCARGAR</a>
+                        </div>
+                    </div>
+                    <div style="border-left-width: 1px !important;border-color: #e9e9e9 !important;border-left-style: solid  !important;height: 200px;width: 50% !important;text-align: center !important;">
+                        <div style="height: 70px;">
+                            <h3 style="font-size:16px !important; margin: 3px 0px !important;">TOTAL A PAGAR</h3>
+                            <h2 style="font-size:18px !important; margin: 3px 0px !important; ">$ {{valor}}</h2>
+                        </div>
+                        <hr style="width: 96% !important;height:2px !important;border: none !important;background-color: #e9e9e9 !important;">
+                        <div style="height: 70px;">
+                            <p style="font-weight: 500 !important;">Paga tu factura sin salir de casa</p>
+                            <a style="font-size: 17px;font-weight: bold !important;text-decoration: none !important;" href="https://www.aguasdebarrancabermeja.app/davivienda/pasarela/#/pagar" target="_blank">PAGAR</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <p style="font-size: 12px;">
+                        Gracias por Cuidar el Medio Ambiente
+                    </p>
+                    <p style="font-size: 12px;font-weight: 600;">
+                        Campaña Cero Papel
+                      </p>
+                    <p style="font-size: 12px;font-weight: 600;">
+                        AGUAS DE BARRANCABERMEJA S.A. E.S.P
+                    </p>
+                </div>
+           </div>
+        </div>
+    </body>
+</html>
