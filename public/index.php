@@ -25,6 +25,7 @@
     $app->addBodyParsingMiddleware();
     $app->addRoutingMiddleware();
     //la suguiente linea cambia en produccion, vaya a la documentacion ._.
+    
     $app->addErrorMiddleware(true, true, true);
     $beforeMiddleware = function (Request $request, RequestHandler $handler) {
         $response = $handler->handle($request);
@@ -46,10 +47,12 @@
     $app->add(function (Request $request, RequestHandler $handler) {
         return $handler->handle($request);
     });
+    
     //llamamos archivos configuracion
     require __DIR__ . '/../config/settings.php'; 
     require __DIR__ . '/../config/dependencies.php'; 
     //llamamos las rutas.
     require __DIR__ . '/../App/routes.php';
+
     $app->run();
 ?>
